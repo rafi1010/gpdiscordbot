@@ -3,7 +3,6 @@ const ayarlar = require('../ayarlar.json');
 var prefix = ayarlar.prefix;
 
 client.on('message', msg => {
-  }
 });
 
 module.exports = member => {
