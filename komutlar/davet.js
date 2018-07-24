@@ -13,7 +13,7 @@ exports.run = (client, message) => {
     .setColor(0x00AE86)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('Link: https://discordapp.com/oauth2/authorize?client_id=288310817810546699&scope=bot&permissions=401812495');
+    .setDescription('İşte Davet Linkim: http://bit.ly/walkybot');
     return message.author.sendEmbed(pingozel)
 };
 

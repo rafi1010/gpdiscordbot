@@ -8,7 +8,7 @@ exports.run = (client, message, args) => {
   .setColor(0xFF0000)
   .setTimestamp()
   .setAuthor(message.author.username, message.author.avatarURL)
-  .addField(':warning: Uyarı :warning:', '`unban` adlı komutu özel mesajlarda kullanamazsın.')
+  .addField(':warning: **Uyarı** :warning:', '`unban` **adlı komutu özel mesajlarda kullanamazsın.** ')
   return message.author.sendEmbed(ozelmesajuyari); }
   let guild = message.guild
   let reason = args.slice(1).join(' ');
@@ -17,8 +17,8 @@ exports.run = (client, message, args) => {
   let user = args[0];
   let modlog = guild.channels.find('name', 'mod-log');
   if (!modlog) return message.reply('`mod-log` kanalını bulamıyorum.');
-  if (reason.length < 1) return message.reply('Ban kaldırma sebebini yazmalısın.');
-  if (!user) return message.reply('Banı kaldırılacak kişinin ID numarasını yazmalısın.').catch(console.error);
+  if (reason.length < 1) return message.reply('**Ban kaldırma sebebini belirtmedin!**');
+  if (!user) return message.reply('**Banı kaldırılacak kişinin** **__ID__** **numarasını yazmalısın.**').catch(console.error);
   message.guild.unban(user);
 
   const embed = new Discord.RichEmbed()

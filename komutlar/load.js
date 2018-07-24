@@ -1,5 +1,5 @@
 exports.run = (client, message, args) => {
-    var command = args[0];
+    var command = args[4];
     message.channel.send("`" + command + "` adlı komut yükleniyor...")
       .then(m => {
         client.load(command)
