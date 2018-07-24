@@ -14,7 +14,7 @@ module.exports = client => {
 var Games = [
         "Sitemiz: discord.io/GangstasParadise ",
 	"Yapımcım: 【ǤⱣ】◉ Rafet Alperen",
-        `ma*yardım|${client.guilds.size} sunucu|${client.users.size} kullanıcı`
+        `ma!yardım|${client.guilds.size} sunucu|${client.users.size} kullanıcı`
     ];
     setInterval(function() {
 	var random = Math.floor(Math.random()*(Games.length-0+1)+0);
