@@ -1,8 +1,6 @@
 const Discord = require('discord.js');
 const moment = require('moment');
 
-var prefix = ayarlar.prefix
-
 exports.run = (client, message, args) => {
 message.channel.sendMessage(' ```Botun yeniden başlatılmasına onay veriyorsanız 30 saniye içinde **(prefix) + evet** yazın.``` ')
 .then(() => {
