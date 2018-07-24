@@ -2,7 +2,11 @@ const ayarlar = require('../ayarlar.json');
 
 var prefix = ayarlar.prefix;
 
+client.on('message', msg => {
+  }
+});
+
 module.exports = member => {
     let username = member.user.username;
-    member.message('Hoş geldin **' + username + '**! Buraya arkadaşlarını davet edebilir ve onlarla oyun oynayabilir, yeni arkadaşlar edinip onlarla oyunlar oynayıp sohbet edebilirsin!');
+    msg.reply('Hoş geldin **' + username + '**! Buraya arkadaşlarını davet edebilir ve onlarla oyun oynayabilir, yeni arkadaşlar edinip onlarla oyunlar oynayıp sohbet edebilirsin!');
 };
