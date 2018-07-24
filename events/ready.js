@@ -17,11 +17,12 @@ module.exports = client => {
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] BOT: Şu an ` + client.channels.size + ` adet kanala, ` + client.guilds.size + ` adet sunucuya ve ` + client.guilds.reduce((a, b) => a + b.memberCount, 0).toLocaleString() + ` kullanıcıya hizmet veriliyor!`);    
 	var Games = [
         "Sitemiz : discord.io/GangstasParadise",
-		"Yapımcım : @【ǤⱣ】◉ Rafet Alperen¹⁹💲",
-        `*yardım|${client.guilds.size} sunucu|${client.users.size} kullanıcı`
+	"Yapımcım : 【ǤⱣ】◉ Rafet Alperen¹⁹",
+        `ma*yardım|${client.guilds.size} sunucu|${client.users.size} kullanıcı`
     ];
     setInterval(function() {
         var random = Math.floor(Math.random()*(Games.length-0+1)+0);
         client.user.setGame(Games[random], "https://www.twitch.tv/antiquary01");
         }, 2 * 2500);
 };
+
