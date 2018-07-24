@@ -1,4 +1,5 @@
 const ayarlar = require('../ayarlar.json');
+const client = new Discord.Client();
 
 var prefix = ayarlar.prefix;
 
