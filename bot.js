@@ -99,18 +99,6 @@ var regToken = /[\w\d]{24}\.[\w\d]{6}\.[\w\d-_]{27}/g;
 //   console.log(chalk.bgBlue.green(e.replace(regToken, 'that was redacted')));
 // });
 
-client.on('guildMemberAdd',member =>{
-    message.member('**NS PROJESI**https://discord.gg/vnrq6kQ\n**HAKKIMIZDA** https://goo.gl/8YDmqa\n**COVER**https://ibb.co/gfbpZJ');
-
-    //member.guild.defaultChannel.sendmessage(`Welcome "${member.user.username}"! Be sure to set your platform by typing "!role"`);
-
-});
-
-
-client.on('guildMemberRemove', member=>{
-
-});
-
 client.on('warn', e => {
   console.log(chalk.bgYellow(e.replace(regToken, 'that was redacted')));
 });
