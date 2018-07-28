@@ -84,6 +84,12 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'selamün aleyküm') {
+    msg.reply('Aleyküm selam,  hoş geldin. Sunucumuzda Kayıt Zorunludur. Kayıt Olmak İçin Lütfen İsminizi Ve Yaşınızı Görevli Akadaşlara Söyleyiniz. ');
+  }
+});
+
 client.elevation = message => {
   if(!message.guild) {
 	return; }
