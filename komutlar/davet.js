@@ -13,7 +13,7 @@ exports.run = (client, message) => {
     .setColor(0x00AE86)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('İşte Davet Linkim: http://bit.ly/walkybot');
+    .setDescription('İşte Davet Linkim: https://discord.gg/6ZgPARX');
     return message.author.sendEmbed(pingozel)
 };
 
