@@ -87,14 +87,14 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   var channel = client.channels.get("466343281773510656");
-  if (msg.content.toLowerCase() === 'sa') {
+  if (msg.content.toLowerCase() === 'selamün aleyküm') {
     msg.channel.send('Aleyküm selam,  hoş geldin. Sunucumuzda Kayıt Zorunludur. Kayıt Olmak İçin Lütfen İsminizi Ve Yaşınızı Görevli Akadaşlara Söyleyiniz. ');
   }
 });
 
 client.on('message', msg => {
   var channel = client.channels.get("466343281773510656");
-  if (msg.content.toLowerCase() === 'sa') {
+  if (msg.content.toLowerCase() === 's.a') {
     msg.channel.send('Aleyküm selam,  hoş geldin. Sunucumuzda Kayıt Zorunludur. Kayıt Olmak İçin Lütfen İsminizi Ve Yaşınızı Görevli Akadaşlara Söyleyiniz. ');
   }
 });
@@ -108,14 +108,14 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   var channel = client.channels.get("466345989297537025");
-  if (msg.content.toLowerCase() === 'sa') {
+  if (msg.content.toLowerCase() === 's.a') {
     msg.channel.send('Aleyküm selam,  hoş geldin. ');
   }
 });
 
 client.on('message', msg => {
   var channel = client.channels.get("466345989297537025");
-  if (msg.content.toLowerCase() === 'sa') {
+  if (msg.content.toLowerCase() === 'selamün aleyküm') {
     msg.channel.send('Aleyküm selam,  hoş geldin. ');
   }
 });
