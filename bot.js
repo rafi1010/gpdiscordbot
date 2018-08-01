@@ -81,42 +81,42 @@ client.unload = command => {
 client.on('message', msg => {
   var channel = client.channels.get("466343281773510656").sendMessage(' ');
   if (msg.content.toLowerCase() === 'sa') {
-    msg.channel.send('Aleyküm selam,  hoş geldin. Sunucumuzda Kayıt Zorunludur. Kayıt Olmak İçin Lütfen İsminizi Ve Yaşınızı Görevli Akadaşlara Söyleyiniz. ');
+    msg.channel('Aleyküm selam,  hoş geldin. Sunucumuzda Kayıt Zorunludur. Kayıt Olmak İçin Lütfen İsminizi Ve Yaşınızı Görevli Akadaşlara Söyleyiniz. ');
   }
 });
 
 client.on('message', msg => {
   var channel = client.channels.get("466343281773510656").sendMessage(' ');
   if (msg.content.toLowerCase() === 'selamün aleyküm') {
-    msg.channel.send('Aleyküm selam,  hoş geldin. Sunucumuzda Kayıt Zorunludur. Kayıt Olmak İçin Lütfen İsminizi Ve Yaşınızı Görevli Akadaşlara Söyleyiniz. ');
+    msg.channel('Aleyküm selam,  hoş geldin. Sunucumuzda Kayıt Zorunludur. Kayıt Olmak İçin Lütfen İsminizi Ve Yaşınızı Görevli Akadaşlara Söyleyiniz. ');
   }
 });
 
 client.on('message', msg => {
   var channel = client.channels.get("466343281773510656").sendMessage(' ');
   if (msg.content.toLowerCase() === 's.a') {
-    msg.channel.send('Aleyküm selam,  hoş geldin. Sunucumuzda Kayıt Zorunludur. Kayıt Olmak İçin Lütfen İsminizi Ve Yaşınızı Görevli Akadaşlara Söyleyiniz. ');
+    msg.channel('Aleyküm selam,  hoş geldin. Sunucumuzda Kayıt Zorunludur. Kayıt Olmak İçin Lütfen İsminizi Ve Yaşınızı Görevli Akadaşlara Söyleyiniz. ');
   }
 });
 
 client.on('message', msg => {
   var chnl = client.channels.get("466345989297537025").sendMessage(' ');
   if (msg.content.toLowerCase() === 'sa') {
-    msg.chnl.send('Aleyküm selam,  hoş geldin. ');
+    msg.chnl('Aleyküm selam,  hoş geldin. ');
   }
 });
 
 client.on('message', msg => {
   var chnl = client.channels.get("466345989297537025").sendMessage(' ');
   if (msg.content.toLowerCase() === 's.a') {
-    msg.chnl.send('Aleyküm selam,  hoş geldin. ');
+    msg.chnl('Aleyküm selam,  hoş geldin. ');
   }
 });
 
 client.on('message', msg => {
   var chnl = client.channels.get("466345989297537025").sendMessage(' ');
   if (msg.content.toLowerCase() === 'selamün aleyküm') {
-    msg.chnl.send('Aleyküm selam,  hoş geldin. ');
+    msg.chnl('Aleyküm selam,  hoş geldin. ');
   }
 });
 
