@@ -102,21 +102,21 @@ client.on('message', msg => {
 client.on('message', msg => {
   var chnl = client.channels.get("466345989297537025");
   if (msg.content.toLowerCase() === 'sa') {
-    msg.chnl.send('Aleyküm selam,  hoş geldin. ');
+    msg.chnl.reply('Aleyküm selam,  hoş geldin. ');
   }
 });
 
 client.on('message', msg => {
   var chnl = client.channels.get("466345989297537025");
   if (msg.content.toLowerCase() === 's.a') {
-    msg.chnl.send('Aleyküm selam,  hoş geldin. ');
+    msg.chnl.reply('Aleyküm selam,  hoş geldin. ');
   }
 });
 
 client.on('message', msg => {
   var channel2 = client.channels.get("466345989297537025");
   if (msg.content.toLowerCase() === 'selamün aleyküm') {
-    msg.chnl.send('Aleyküm selam,  hoş geldin. ');
+    msg.chnl.reply('Aleyküm selam,  hoş geldin. ');
   }
 });
 
