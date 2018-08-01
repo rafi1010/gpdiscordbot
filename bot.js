@@ -80,6 +80,7 @@ client.unload = command => {
 
 client.on('message', msg => {
   var channel = client.channels.get("466343281773510656");
+  var send = channel.sendMessage
   if (msg.content.toLowerCase() === 'sa') {
     msg.channel.send('Aleyküm selam,  hoş geldin. Sunucumuzda Kayıt Zorunludur. Kayıt Olmak İçin Lütfen İsminizi Ve Yaşınızı Görevli Akadaşlara Söyleyiniz. ');
   }
@@ -102,21 +103,21 @@ client.on('message', msg => {
 client.on('message', msg => {
   var chnl = client.channels.get("466345989297537025");
   if (msg.content.toLowerCase() === 'sa') {
-    msg.chnl.reply('Aleyküm selam,  hoş geldin. ');
+    msg.chnl.send('Aleyküm selam,  hoş geldin. ');
   }
 });
 
 client.on('message', msg => {
   var chnl = client.channels.get("466345989297537025");
   if (msg.content.toLowerCase() === 's.a') {
-    msg.chnl.reply('Aleyküm selam,  hoş geldin. ');
+    msg.chnl.send('Aleyküm selam,  hoş geldin. ');
   }
 });
 
 client.on('message', msg => {
-  var channel2 = client.channels.get("466345989297537025");
+  var chnl = client.channels.get("466345989297537025");
   if (msg.content.toLowerCase() === 'selamün aleyküm') {
-    msg.chnl.reply('Aleyküm selam,  hoş geldin. ');
+    msg.chnl.send('Aleyküm selam,  hoş geldin. ');
   }
 });
 
