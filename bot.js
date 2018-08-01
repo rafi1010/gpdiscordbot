@@ -100,23 +100,23 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
-  var channel = client.channels.get("466345989297537025");
+  var channel2 = client.channels.get("466345989297537025");
   if (msg.content.toLowerCase() === 'sa') {
-    msg.channel.send('Aleyküm selam,  hoş geldin. ');
+    msg.channel2.send('Aleyküm selam,  hoş geldin. ');
   }
 });
 
 client.on('message', msg => {
-  var channel = client.channels.get("466345989297537025");
+  var channel2 = client.channels.get("466345989297537025");
   if (msg.content.toLowerCase() === 's.a') {
-    msg.channel.send('Aleyküm selam,  hoş geldin. ');
+    msg.channel2.send('Aleyküm selam,  hoş geldin. ');
   }
 });
 
 client.on('message', msg => {
-  var channel = client.channels.get("466345989297537025");
+  var channel2 = client.channels.get("466345989297537025");
   if (msg.content.toLowerCase() === 'selamün aleyküm') {
-    msg.channel.send('Aleyküm selam,  hoş geldin. ');
+    msg.channel2.send('Aleyküm selam,  hoş geldin. ');
   }
 });
 
