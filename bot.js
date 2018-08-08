@@ -97,6 +97,32 @@ client.on('message', msg => {
   }
 });
 
+var guildConf = require('./serverdosyaları/guildConf.json');
+
+client.on('ready', () => { // If the Bot went on, proceed
+    console.log('I\'m Online!');
+});
+
+client.on('guildCreate', (guild) => { // If the Bot was added on a server, proceed
+    if (!guildConf[guild.id]) { // If the guild's id is not on the GUILDCONF File, proceed
+	guildConf[guild.id] = {
+		prefix: config.prefix
+	}
+    }
+     fs.writeFile('./storages/guildConf.json', JSON.stringify(guildConf, null, 2), (err) => {
+     	if (err) console.log(err)
+	})
+});
+
+
+bot.on('guildDelete', (guild) => { // If the Bot was removed on a server, proceed
+     delete guildConf[guild.id]; // Deletes the Guild ID and Prefix
+     fs.writeFile('./storages/guildConf.json', JSON.stringify(guildConf, null, 2), (err) => {
+     	if (err) console.log(err)
+	})
+});
+
+
 client.elevation = message => {
   if(!message.guild) {
 	return; }
