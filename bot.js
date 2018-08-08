@@ -115,7 +115,7 @@ client.on('guildCreate', (guild) => { // If the Bot was added on a server, proce
 });
 
 
-bot.on('guildDelete', (guild) => { // If the Bot was removed on a server, proceed
+client.on('guildDelete', (guild) => { // If the Bot was removed on a server, proceed
      delete guildConf[guild.id]; // Deletes the Guild ID and Prefix
      fs.writeFile('./storages/guildConf.json', JSON.stringify(guildConf, null, 2), (err) => {
      	if (err) console.log(err)
