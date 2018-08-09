@@ -99,6 +99,8 @@ client.on('message', msg => {
 
 var guildConf = require('./serverdosyaları/guildConf.json');
 
+let commandFile = require(`./komutlar/prefixayarla.js`);
+
 client.on('guildCreate', (guild) => { // If the Bot was added on a server, proceed
     if (!guildConf[guild.id]) { // If the guild's id is not on the GUILDCONF File, proceed
 	guildConf[guild.id] = {
@@ -109,7 +111,6 @@ client.on('guildCreate', (guild) => { // If the Bot was added on a server, proce
      	if (err) console.log(err)
 	})
 });
-
 
 client.on('guildDelete', (guild) => { // If the Bot was removed on a server, proceed
      delete guildConf[guild.id]; // Deletes the Guild ID and Prefix
