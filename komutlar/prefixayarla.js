@@ -1,6 +1,8 @@
 const db = require('quick.db');
 const fs = require('fs');
 
+var guildConf = require('./serverdosyaları/guildConf.json');
+
 exports.run = (client, message, args) => {
 
   if (!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send(`**Afedersin, Gerekli Yetkin Bulunmamakta**`);
