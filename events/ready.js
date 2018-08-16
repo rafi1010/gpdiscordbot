@@ -13,7 +13,7 @@ module.exports = client => {
   console.log(`[${moment().format('YYYY-MM-DD HH:mm:ss')}] BOT: Şu an ` + client.channels.size + ` adet kanala, ` + client.guilds.size + ` adet sunucuya ve ` + client.guilds.reduce((a, b) => a + b.memberCount, 0).toLocaleString() + ` kullanıcıya hizmet veriliyor!`);
 var Games = [
         "Sitemiz: discord.gg/Fz9BMrj ",
-	"Yapımcım: 【ǤⱣ】◉ Rafet Alperen",
+	"Yapımcım: 𝓢𝓢  ☍Rafet",
         `ma!yardım|${client.guilds.size} sunucu|${client.users.size} kullanıcı`
     ];
     setInterval(function() {
