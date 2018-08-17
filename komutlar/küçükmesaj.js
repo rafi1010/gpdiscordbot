@@ -23,7 +23,7 @@ const mappings = (function (object) {
     c: '\u1D04',
     d: '\u1D05',
     e: '\u1D07',
-    f: '\uA730',
+    f: '\u0066',
     g: '\u0262',
     h: '\u029C',
     i: '\u026A',
