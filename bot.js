@@ -97,6 +97,12 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'selamün aleyküm ahali') {
+    msg.reply('Ooo Başkan Hoşgeldin, Sefa Getirdin.');
+  }
+});
+
 var guildConf = require('./serverdosyaları/guildConf.json');
 
 client.on('guildCreate', (guild) => { // If the Bot was added on a server, proceed
