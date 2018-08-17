@@ -11,11 +11,11 @@ exports.run = (client, message, params) => {
     return message.author.sendEmbed(ozelmesajuyari); }
     if (message.channel.type !== 'dm') {
       const sunucubilgi = new Discord.RichEmbed()
-    .setAuthor('İşte Benim Profil Gizemli profil resmimn\nBeğenmedinmi orospuçocuğu')
+    .setAuthor('İşte Benim Profil Gizemli profil resmimn\nNasılmış :)')
     .setColor('RANDOM')
     .setTimestamp()
     .setDescription('')
-		.setImage(`https://www.imagevisit.com/images/2018/07/29/esther-bot.png`)
+		.setImage(`https://www.imagevisit.com/images/2018/08/17/MASE.png`)
     return message.channel.sendEmbed(sunucubilgi);
     }
 };
