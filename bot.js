@@ -99,7 +99,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'selamün aleyküm ahali') {
-    msg.reply('Ooo Başkan Hoşgeldin, Sefa Getirdin.');
+    msg.reply('Ooo Başkan. Aleyküm Selam. Hoşgeldin, Sefa Getirdin.');
   }
 });
 
