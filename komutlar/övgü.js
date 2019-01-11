@@ -1,10 +1,10 @@
-const Discord = require('discord.js');
+<<<<<<const Discord = require('discord.js');
 
 exports.run = (client, message, args) => {
   let reason = args.slice(1).join(' ');
   let guild = message.guild
-  let terfiler = guild.channels.find('name', 'ıce-log');
-  if (!terfiler) return message.reply('`ıce-log` kanalını bulamıyorum.');
+  let terfiler = guild.channels.find('name', 'mod-log');
+  if (!terfiler) return message.reply('`mod-log` kanalını bulamıyorum.');
   let user = message.mentions.users.first();
   if (reason.length < 1) return message.reply('övme sebebini yazmalısın.');
   if (message.mentions.users.size < 1) return message.reply('Kimi öveceğini yazmalısın').catch(console.error);
