@@ -3,7 +3,7 @@ const Discord = require('discord.js');
 exports.run = async(client, message, args) => {
 const emoji = message.client.emojis.get('');
       let isEnabled;
-      message.reply("`Birazdan Yetkili Ekibimiz Sizinle ilgilenicektir.`");
+      message.reply("`Birazdan Yetkili Ekibimiz Sizinle ilgilenicektir. Destek Alabilmek İçin Sunucumuza Katılmalısınız https://discord.gg/7MCA7rr `");
       let mesaj = args.slice(0).join(' ');
       let chan = message.channel;
       let destekKanal = "533600799876579328";
