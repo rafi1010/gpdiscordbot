@@ -3,7 +3,7 @@ const client = new Discord.Client();
 const ayarlar = require('../ayarlar.json');
 const weather = require('weather-js');
 
-var lele = ayarlar.prefix;
+var prefix = ayarlar.prefix;
 
 exports.run = (client, message) => {
 
