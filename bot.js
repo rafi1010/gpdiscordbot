@@ -81,29 +81,29 @@ client.unload = command => {
   });
 };
 
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'sa') {
-    msg.reply('Aleyküm selam,  hoş geldin ^^');
-  }
-});
+//client.on('message', msg => {
+  //if (msg.content.toLowerCase() === 'sa') {
+    //msg.reply('Aleyküm selam,  hoş geldin ^^');
+  //}
+//});
 
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'selamün aleyküm') {
-    msg.reply('Aleyküm selam,  hoş geldin ^^');
-  }
-});
+//client.on('message', msg => {
+  //if (msg.content.toLowerCase() === 'selamün aleyküm') {
+    //msg.reply('Aleyküm selam,  hoş geldin ^^');
+  //}
+//});
 
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === 's.a') {
-    msg.reply('Aleyküm selam,  hoş geldin ^^');
-  }
-});
+//client.on('message', msg => {
+  //if (msg.content.toLowerCase() === 's.a') {
+    //msg.reply('Aleyküm selam,  hoş geldin ^^');
+  //}
+//});
 
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'selamün aleyküm ahali') {
-    msg.reply('Ooo Başkan. Aleyküm Selam. Hoşgeldin, Sefa Getirdin.');
-  }
-});
+//client.on('message', msg => {
+  //if (msg.content.toLowerCase() === 'selamün aleyküm ahali') {
+    //msg.reply('Ooo Başkan. Aleyküm Selam. Hoşgeldin, Sefa Getirdin.');
+  //}
+//});
 
 var guildConf = require('./serverdosyaları/guildConf.json');
 
