@@ -48,17 +48,3 @@ const _ = require('lodash')
 }
 
 module.exports = DiceRollCommand
-
-
-exports.conf = {
-  enabled: true,
-  guildOnly: false,
-  aliases: [],
-  permLevel: 0
-};
-
-exports.help = {
-  name: 'zar',
-  description: 'zar oyunu oynatır',
-  usage: 'zar'
-};
