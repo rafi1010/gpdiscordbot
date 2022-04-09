@@ -16,7 +16,7 @@
     "generate-password": "^1.5.1",
     "jimp": "^0.16.1",
     "math-expression-evaluator": "^1.2.22",
-    "moment": "^2.29.1",
+    "moment": "^2.29.2",
     "moment-duration-format": "^2.3.2",
     "ms": "^2.1.2",
     "quick.db": "^7.1.3",
